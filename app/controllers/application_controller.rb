@@ -60,4 +60,8 @@ class ApplicationController < ActionController::Base
 
     params[key] || request.env["HTTP_X_#{key.upcase}"]
   end
+
+  def current_user
+    @current_user ||= User.find_by_authentication_token(authentication_token)
+  end
 end
