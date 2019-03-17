@@ -14,7 +14,7 @@ gem 'paperclip', '3.5.4'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'acts-as-taggable-on'
 gem 'ancestry'
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'rails_admin'
 # kaminari is locked because we've monkeypatched it to work around
 # slow postgres table counts on large tables.
