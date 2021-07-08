@@ -34,7 +34,7 @@ gem 'ruby-progressbar'
 gem 'turnout'
 gem 'date_validator'
 gem 'piwik_analytics'
-gem 'twitter'
+gem 'twitter', '>= 5.15.0'
 gem 'twitter-text'
 gem 'rails_admin_tag_list'
 gem 'rack-attack'
@@ -72,7 +72,7 @@ group :test do
   gem 'bourne', require: false
   gem 'capybara-webkit', '~> 1.11.1'
   gem 'database_cleaner'
-  gem 'launchy'
+  gem 'launchy', '>= 2.3.0'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
   gem 'simplecov', require: false
   gem 'timecop'
