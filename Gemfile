@@ -7,15 +7,15 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'pg'
-gem 'rails', '~> 4.2.6'
+gem 'rails', '~> 5.2.7', '>= 5.2.7.1'
 gem 'recipient_interceptor'
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 gem 'paperclip', '3.5.4'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'acts-as-taggable-on'
 gem 'ancestry'
-gem 'devise'
-gem 'rails_admin'
+gem 'devise', '>= 4.4.2'
+gem 'rails_admin', '>= 1.0.0'
 # kaminari is locked because we've monkeypatched it to work around
 # slow postgres table counts on large tables.
 gem 'kaminari', '0.14.1'
@@ -43,8 +43,8 @@ gem 'minitest'
 gem 'spork-rails', git: 'https://github.com/sporkrb/spork-rails'
 
 group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails'
+  gem 'coffee-rails', '>= 4.2.2'
+  gem 'sass-rails', '>= 5.0.5'
   gem 'uglifier'
   gem 'therubyracer'
 end
@@ -58,7 +58,7 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.0'
   gem 'sham_rack'
   gem 'pry-rails'
   gem 'ruby-prof'
