@@ -15,7 +15,7 @@ gem 'active_model_serializers', '~> 0.8.3'
 gem 'acts-as-taggable-on'
 gem 'ancestry'
 gem 'devise'
-gem 'rails_admin'
+gem 'rails_admin', '>= 2.0.0'
 # kaminari is locked because we've monkeypatched it to work around
 # slow postgres table counts on large tables.
 gem 'kaminari', '0.14.1'
@@ -44,7 +44,7 @@ gem 'spork-rails', git: 'https://github.com/sporkrb/spork-rails'
 
 group :assets do
   gem 'coffee-rails'
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 6.0.0'
   gem 'uglifier'
   gem 'therubyracer'
 end
