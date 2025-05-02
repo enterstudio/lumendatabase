@@ -58,7 +58,7 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'sham_rack'
   gem 'pry-rails'
   gem 'ruby-prof'
